@@ -4,24 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0c995894a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Portfolio | Anna Simenstad</title>
   </head>
   <body>
     <header>
-      <div class="logo">Anna Simenstad</div>
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+        <div class="menu">
+          <a href="index.html" class="logo">Anna Simenstad</a>
+          <button class="menu-button" id="menuButton">
+            <i class="fa-solid fa-bars" id="open"></i><i class="fa-solid fa-xmark" id="close"></i>
+          </button>
+        </div>
+        <ul class="menu-items" id="menuItems">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about-container"><h1>About</h1></section>
-      <section class="projects-container"><h2>Projects</h2></section>
-      <section class="contact-container"><h2>Contact</h2></section>
+      <section class="about-container" id="about">
+        <div class="about-info">
+          <h1>Hello, I'm Anna</h1>
+          <p>I am a front-end developer student. Welcome to my portfolio.</p>
+          <div class="about-links"><a href="#" class="cta">GitHub</a> <a href="#" class="cta">LinkedIn</a></div>
+        </div>
+        <div class="about-img"><img src="images/blabla.jpeg" alt="Anna Simenstad" /></div>
+      </section>
+      <section class="projects-container" id="projects">
+        <div class="projects-header">
+          <h2>Projects</h2>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h3>Miso Hungry</h3>
+            <p>
+              Miso Hungry is a food blog which shares recipes. The recipes are created in Wordpress, and then fetched
+              through the Wordpress REST API.
+            </p>
+            <div class="card-links">
+              <a href="https://verdant-lokum-39f242.netlify.app/" class="cta">Website</a>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-asimenstad" class="cta">GitHub</a>
+            </div>
+          </div>
+          <img src="images/m-h_screenshot.jpg" alt="Screenshot of the Miso Hungry website" />
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h3>RainyDays</h3>
+            <p>
+              RainyDays is an online shop which sells rain jackets designed for different kinds of outdoor activities.
+              The products are created in Wordpress with WooCommerce, and then fetched through the WooCommerce REST API.
+            </p>
+            <div class="card-links">
+              <a href="https://jolly-galileo-19da98.netlify.app/" class="cta">Website</a>
+              <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-asimenstad" class="cta">GitHub</a>
+            </div>
+          </div>
+          <img src="images/r-d_screenshot.jpg" alt="Screenshot of the RainyDays website" />
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h3>Community Science Museum</h3>
+            <p>Community Science Museum is an interactive science museum for kids.</p>
+            <div class="card-links">
+              <a href="https://gallant-bardeen-5a3f28.netlify.app/" class="cta">Website</a>
+              <a href="https://github.com/asimenstad/Semester-Project" class="cta">GitHub</a>
+            </div>
+          </div>
+          <img src="images/c-s-m_screenshot.jpg" alt="Screenshot of the Community Science Museum website" />
+        </div>
+      </section>
+      <section class="contact-container" id="contact">
+        <div class="contact-header"><h2>Contact</h2></div>
+        <form action="#" class="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="contact-message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <button type="submit" class="cta">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer><p>2022 &copy; Anna Simenstad</p></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
