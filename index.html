@@ -80,18 +80,18 @@
       </section>
       <section class="contact-container" id="contact">
         <div class="contact-header"><h2>Contact</h2></div>
-        <form action="#" class="contact-form">
+        <form action="https://formsubmit.co/a-nna-s@hotmail.com" method="POST" class="contact-form">
           <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" required />
+            <input type="hidden" name="_subject" value="New message!" />
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required />
           </div>
           <div class="contact-message">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="text" name="_honey" class="honeypot" />
             <button type="submit" class="cta">Send</button>
           </div>
         </form>
