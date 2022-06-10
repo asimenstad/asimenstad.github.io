@@ -35,18 +35,3 @@ function hideNav() {
 }
 
 window.addEventListener("scroll", hideNav);
-
-/// Show and hide contact success modal
-const successModal = document.querySelector("#contact-success");
-const closeModal = document.querySelector("#close-modal");
-const contactForm = document.querySelector("#contact-form");
-
-function showSuccessModal() {
-  successModal.style.display = "flex";
-}
-contactForm.addEventListener("submit", showSuccessModal);
-
-function closeSuccessModal() {
-  successModal.style.display = "none";
-}
-closeModal.addEventListener("click", closeSuccessModal);
