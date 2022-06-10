@@ -83,11 +83,16 @@
       </section>
       <section class="contact-container" id="contact">
         <div class="contact-header"><h2>Contact</h2></div>
-        <form action="https://formsubmit.co/354b77485e56a2f3ec07d2a51ac93fba" method="POST" class="contact-form">
+        <form
+          action="https://formsubmit.co/354b77485e56a2f3ec07d2a51ac93fba"
+          method="POST"
+          class="contact-form"
+          id="contact-form"
+        >
           <div>
+            <input type="hidden" name="_subject" value="New message from portfolio" />
             <label for="name">Name*</label>
             <input type="text" name="name" id="name" required />
-            <input type="hidden" name="_subject" value="New message!" />
             <label for="email">Email*</label>
             <input type="email" name="email" id="email" required />
           </div>
@@ -97,9 +102,14 @@
             <button type="submit" class="cta">Send</button>
           </div>
           <input type="text" name="_honey" class="honeypot" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://asimenstad.github.io/#contact-success" />
         </form>
+        <div id="contact-success" class="contact-success-container">
+          <div class="contact-success">
+            <h2>Thank you for your message!</h2>
+            <p>I will get back to you as soon as possible <i class="fa-solid fa-face-smile"></i></p>
+            <button id="close-modal" class="cta"><i class="fa-solid fa-arrow-left-long"></i>Back to site</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer><p>&copy; 2022 Anna Simenstad</p></footer>
